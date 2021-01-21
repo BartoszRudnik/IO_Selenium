@@ -1,0 +1,1037 @@
+{
+  "id": "4d918a45-266e-4ac0-b4d9-53aaaa35beef",
+  "version": "2.0",
+  "name": "BiuroTest",
+  "url": "http://localhost:8080/WebApplication1/faces/index.xhtml",
+  "tests": [{
+    "id": "c1e1f339-8e0f-4bc2-b583-2c96afdf1e54",
+    "name": "DodajWydarzenie_Selenium",
+    "commands": [{
+      "id": "bac82c8d-877c-4040-b70c-11b260ac62b6",
+      "comment": "",
+      "command": "open",
+      "target": "/WebApplication1/faces/index.xhtml",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bdfbc3ce-35d0-4e79-9d8a-ad11c5ec07f7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "550x692",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e4101da1-0380-41ae-9bf7-f80008fdb32c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Show All Wydarzenie Items",
+      "targets": [
+        ["linkText=Show All Wydarzenie Items", "linkText"],
+        ["css=a:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Show All Wydarzenie Items')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/WebApplication1/faces/web_jsf/wydarzenie/List.xhtml')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Show All Wydarzenie Items')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "93f63c55-6096-4f09-9c1f-097e483f43d7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Create New Wydarzenie",
+      "targets": [
+        ["linkText=Create New Wydarzenie", "linkText"],
+        ["css=a:nth-child(5)", "css:finder"],
+        ["xpath=//a[contains(text(),'Create New Wydarzenie')]", "xpath:link"],
+        ["xpath=//a[@onclick=\"mojarra.jsfcljs(document.getElementById('j_idt11'),{'j_idt11:j_idt56':'j_idt11:j_idt56'},'');return false\"]", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt11']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[4]", "xpath:href"],
+        ["xpath=//form/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Create New Wydarzenie')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "460d4c96-cf65-45b3-8ee2-5b95b1b5c40e",
+      "comment": "",
+      "command": "click",
+      "target": "id=j_idt12:wydarzenieId",
+      "targets": [
+        ["id=j_idt12:wydarzenieId", "id"],
+        ["name=j_idt12:wydarzenieId", "name"],
+        ["css=#j_idt12\\3AwydarzenieId", "css:finder"],
+        ["xpath=//input[@id='j_idt12:wydarzenieId']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/table/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf3d131a-125e-47a0-b106-4ff22f1a9425",
+      "comment": "",
+      "command": "type",
+      "target": "id=j_idt12:wydarzenieId",
+      "targets": [
+        ["id=j_idt12:wydarzenieId", "id"],
+        ["name=j_idt12:wydarzenieId", "name"],
+        ["css=#j_idt12\\3AwydarzenieId", "css:finder"],
+        ["xpath=//input[@id='j_idt12:wydarzenieId']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/table/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "2"
+    }, {
+      "id": "a30a01cf-e97b-4cda-921a-b5ca8c8cb20f",
+      "comment": "",
+      "command": "click",
+      "target": "id=j_idt12:liczbaMiejsc",
+      "targets": [
+        ["id=j_idt12:liczbaMiejsc", "id"],
+        ["name=j_idt12:liczbaMiejsc", "name"],
+        ["css=#j_idt12\\3AliczbaMiejsc", "css:finder"],
+        ["xpath=//input[@id='j_idt12:liczbaMiejsc']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/table/tbody/tr[2]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "053e2af6-dfd8-46f4-8e98-dc5d5a67e600",
+      "comment": "",
+      "command": "click",
+      "target": "id=j_idt12:liczbaMiejsc",
+      "targets": [
+        ["id=j_idt12:liczbaMiejsc", "id"],
+        ["name=j_idt12:liczbaMiejsc", "name"],
+        ["css=#j_idt12\\3AliczbaMiejsc", "css:finder"],
+        ["xpath=//input[@id='j_idt12:liczbaMiejsc']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/table/tbody/tr[2]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "31dcf425-af3e-4236-93bd-5b57f0429451",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "id=j_idt12:liczbaMiejsc",
+      "targets": [
+        ["id=j_idt12:liczbaMiejsc", "id"],
+        ["name=j_idt12:liczbaMiejsc", "name"],
+        ["css=#j_idt12\\3AliczbaMiejsc", "css:finder"],
+        ["xpath=//input[@id='j_idt12:liczbaMiejsc']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/table/tbody/tr[2]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "02a14c31-945f-4c69-bd43-a7678525d68b",
+      "comment": "",
+      "command": "type",
+      "target": "id=j_idt12:liczbaMiejsc",
+      "targets": [
+        ["id=j_idt12:liczbaMiejsc", "id"],
+        ["name=j_idt12:liczbaMiejsc", "name"],
+        ["css=#j_idt12\\3AliczbaMiejsc", "css:finder"],
+        ["xpath=//input[@id='j_idt12:liczbaMiejsc']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/table/tbody/tr[2]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": "30"
+    }, {
+      "id": "5505b8a3-7fca-49dd-a3d4-8314189ab440",
+      "comment": "",
+      "command": "type",
+      "target": "id=j_idt12:nazwaWydarzenia",
+      "targets": [
+        ["id=j_idt12:nazwaWydarzenia", "id"],
+        ["name=j_idt12:nazwaWydarzenia", "name"],
+        ["css=#j_idt12\\3AnazwaWydarzenia", "css:finder"],
+        ["xpath=//input[@id='j_idt12:nazwaWydarzenia']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/table/tbody/tr[3]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": "Bieganie"
+    }, {
+      "id": "1f18a369-270c-4ddf-8de2-54eda0831376",
+      "comment": "",
+      "command": "click",
+      "target": "css=table",
+      "targets": [
+        ["css=table", "css:finder"],
+        ["xpath=//form[@id='j_idt12']/table", "xpath:idRelative"],
+        ["xpath=//table", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "867bd003-dee5-4f5d-9e15-a92ecf219bad",
+      "comment": "",
+      "command": "click",
+      "target": "id=j_idt12:dataWydarzenia",
+      "targets": [
+        ["id=j_idt12:dataWydarzenia", "id"],
+        ["name=j_idt12:dataWydarzenia", "name"],
+        ["css=#j_idt12\\3A dataWydarzenia", "css:finder"],
+        ["xpath=//input[@id='j_idt12:dataWydarzenia']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/table/tbody/tr[4]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[4]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7c271528-d83a-474c-b93c-7f15e063a416",
+      "comment": "",
+      "command": "type",
+      "target": "id=j_idt12:dataWydarzenia",
+      "targets": [
+        ["id=j_idt12:dataWydarzenia", "id"],
+        ["name=j_idt12:dataWydarzenia", "name"],
+        ["css=#j_idt12\\3A dataWydarzenia", "css:finder"],
+        ["xpath=//input[@id='j_idt12:dataWydarzenia']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/table/tbody/tr[4]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[4]/td[2]/input", "xpath:position"]
+      ],
+      "value": "30.03.2021"
+    }, {
+      "id": "6dc8a9ad-af91-4c04-a959-cd878bd71629",
+      "comment": "",
+      "command": "click",
+      "target": "id=j_idt12:godzinaRozpoczecia",
+      "targets": [
+        ["id=j_idt12:godzinaRozpoczecia", "id"],
+        ["name=j_idt12:godzinaRozpoczecia", "name"],
+        ["css=#j_idt12\\3AgodzinaRozpoczecia", "css:finder"],
+        ["xpath=//input[@id='j_idt12:godzinaRozpoczecia']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/table/tbody/tr[5]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e4e7b72-ec4a-4256-a94b-bc35b52cc9b2",
+      "comment": "",
+      "command": "type",
+      "target": "id=j_idt12:godzinaRozpoczecia",
+      "targets": [
+        ["id=j_idt12:godzinaRozpoczecia", "id"],
+        ["name=j_idt12:godzinaRozpoczecia", "name"],
+        ["css=#j_idt12\\3AgodzinaRozpoczecia", "css:finder"],
+        ["xpath=//input[@id='j_idt12:godzinaRozpoczecia']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/table/tbody/tr[5]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[2]/input", "xpath:position"]
+      ],
+      "value": "16:45"
+    }, {
+      "id": "29e065c7-b994-4f0b-818c-37e7cc894f2b",
+      "comment": "",
+      "command": "click",
+      "target": "id=j_idt12:typWydarzenia",
+      "targets": [
+        ["id=j_idt12:typWydarzenia", "id"],
+        ["name=j_idt12:typWydarzenia", "name"],
+        ["css=#j_idt12\\3AtypWydarzenia", "css:finder"],
+        ["xpath=//input[@id='j_idt12:typWydarzenia']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/table/tbody/tr[6]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[6]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6ebba1b6-8379-49bc-a635-32fc86f90e88",
+      "comment": "",
+      "command": "type",
+      "target": "id=j_idt12:typWydarzenia",
+      "targets": [
+        ["id=j_idt12:typWydarzenia", "id"],
+        ["name=j_idt12:typWydarzenia", "name"],
+        ["css=#j_idt12\\3AtypWydarzenia", "css:finder"],
+        ["xpath=//input[@id='j_idt12:typWydarzenia']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/table/tbody/tr[6]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[6]/td[2]/input", "xpath:position"]
+      ],
+      "value": "Stacjonarne"
+    }, {
+      "id": "26cce6d8-bd8a-4b70-8771-fb8c6dfbd10c",
+      "comment": "",
+      "command": "click",
+      "target": "id=j_idt12:linkDoWydarzenia",
+      "targets": [
+        ["id=j_idt12:linkDoWydarzenia", "id"],
+        ["name=j_idt12:linkDoWydarzenia", "name"],
+        ["css=#j_idt12\\3AlinkDoWydarzenia", "css:finder"],
+        ["xpath=//input[@id='j_idt12:linkDoWydarzenia']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/table/tbody/tr[7]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[7]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc6355cd-be70-49f6-8506-2e5c782f5851",
+      "comment": "",
+      "command": "type",
+      "target": "id=j_idt12:linkDoWydarzenia",
+      "targets": [
+        ["id=j_idt12:linkDoWydarzenia", "id"],
+        ["name=j_idt12:linkDoWydarzenia", "name"],
+        ["css=#j_idt12\\3AlinkDoWydarzenia", "css:finder"],
+        ["xpath=//input[@id='j_idt12:linkDoWydarzenia']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/table/tbody/tr[7]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[7]/td[2]/input", "xpath:position"]
+      ],
+      "value": "bieg.pl"
+    }, {
+      "id": "2ea1c107-e08f-435e-8206-1a169a46115c",
+      "comment": "",
+      "command": "click",
+      "target": "id=j_idt12:miejsceWydarzenia",
+      "targets": [
+        ["id=j_idt12:miejsceWydarzenia", "id"],
+        ["name=j_idt12:miejsceWydarzenia", "name"],
+        ["css=#j_idt12\\3AmiejsceWydarzenia", "css:finder"],
+        ["xpath=//input[@id='j_idt12:miejsceWydarzenia']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/table/tbody/tr[8]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[8]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "54a45f68-7ee5-4db2-b9eb-8fae83aab0d7",
+      "comment": "",
+      "command": "type",
+      "target": "id=j_idt12:miejsceWydarzenia",
+      "targets": [
+        ["id=j_idt12:miejsceWydarzenia", "id"],
+        ["name=j_idt12:miejsceWydarzenia", "name"],
+        ["css=#j_idt12\\3AmiejsceWydarzenia", "css:finder"],
+        ["xpath=//input[@id='j_idt12:miejsceWydarzenia']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/table/tbody/tr[8]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[8]/td[2]/input", "xpath:position"]
+      ],
+      "value": "Wroclaw"
+    }, {
+      "id": "8f2b9e87-b13f-4620-83e6-4c46c5000052",
+      "comment": "",
+      "command": "click",
+      "target": "id=j_idt12:czasTrwania",
+      "targets": [
+        ["id=j_idt12:czasTrwania", "id"],
+        ["name=j_idt12:czasTrwania", "name"],
+        ["css=#j_idt12\\3A czasTrwania", "css:finder"],
+        ["xpath=//input[@id='j_idt12:czasTrwania']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/table/tbody/tr[9]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[9]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e9f3231-acff-442d-977f-340fdcc2c51f",
+      "comment": "",
+      "command": "type",
+      "target": "id=j_idt12:czasTrwania",
+      "targets": [
+        ["id=j_idt12:czasTrwania", "id"],
+        ["name=j_idt12:czasTrwania", "name"],
+        ["css=#j_idt12\\3A czasTrwania", "css:finder"],
+        ["xpath=//input[@id='j_idt12:czasTrwania']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/table/tbody/tr[9]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[9]/td[2]/input", "xpath:position"]
+      ],
+      "value": "65"
+    }, {
+      "id": "f79d3053-5e3d-4098-95d8-bbfb88006bf5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Save",
+      "targets": [
+        ["linkText=Save", "linkText"],
+        ["css=a:nth-child(5)", "css:finder"],
+        ["xpath=//a[contains(text(),'Save')]", "xpath:link"],
+        ["xpath=//a[@onclick=\"mojarra.jsfcljs(document.getElementById('j_idt12'),{'j_idt12:j_idt24':'j_idt12:j_idt24'},'');return false\"]", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Save')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "42677dfd-d457-40ae-b34d-6732003f9639",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Show All Wydarzenie Items",
+      "targets": [
+        ["linkText=Show All Wydarzenie Items", "linkText"],
+        ["css=a:nth-child(8)", "css:finder"],
+        ["xpath=//a[contains(text(),'Show All Wydarzenie Items')]", "xpath:link"],
+        ["xpath=//a[@onclick=\"mojarra.jsfcljs(document.getElementById('j_idt12'),{'j_idt12:j_idt26':'j_idt12:j_idt26'},'');return false\"]", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/a[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Show All Wydarzenie Items')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c915f696-fb1d-4b39-b742-12b2b4aa1a45",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Index",
+      "targets": [
+        ["linkText=Index", "linkText"],
+        ["css=a:nth-child(8)", "css:finder"],
+        ["xpath=//a[contains(text(),'Index')]", "xpath:link"],
+        ["xpath=//form[@id='j_idt11']/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/WebApplication1/faces/index.xhtml')]", "xpath:href"],
+        ["xpath=//form/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Index')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "4f0996c3-8fe1-4e0b-9c28-ab2ba8770156",
+    "name": "ArchiwizujWydarzenie_Selenium",
+    "commands": [{
+      "id": "ef703fc6-764e-4ea3-8e4e-dfaf2a92dadd",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/WebApplication1/faces/index.xhtml",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3658f550-68ff-4205-ae5d-2b1d1b8f6022",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "710x676",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c3f7c058-dd5b-4a9d-bf07-f59edf466e0e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Show All Wydarzenie Items",
+      "targets": [
+        ["linkText=Show All Wydarzenie Items", "linkText"],
+        ["css=a:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Show All Wydarzenie Items')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/WebApplication1/faces/web_jsf/wydarzenie/List.xhtml')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Show All Wydarzenie Items')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5c4e3496-f646-466c-9989-09b3d739998e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.jsfcrud_even_row:nth-child(2) a:nth-child(3)",
+      "targets": [
+        ["css=.jsfcrud_even_row:nth-child(2) a:nth-child(3)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Destroy')])[2]", "xpath:link"],
+        ["xpath=//a[@onclick=\"mojarra.jsfcljs(document.getElementById('j_idt11'),{'j_idt11:wydarzenia:1:j_idt54':'j_idt11:wydarzenia:1:j_idt54'},'');return false\"]", "xpath:attributes"],
+        ["xpath=//table[@id='j_idt11:wydarzenia']/tbody/tr[2]/td[10]/a[3]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[6]", "xpath:href"],
+        ["xpath=//tr[2]/td[10]/a[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e0a79b3-de0b-4320-9253-e7b6a80b9cc0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Index",
+      "targets": [
+        ["linkText=Index", "linkText"],
+        ["css=a:nth-child(8)", "css:finder"],
+        ["xpath=//a[contains(text(),'Index')]", "xpath:link"],
+        ["xpath=//form[@id='j_idt11']/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/WebApplication1/faces/index.xhtml')]", "xpath:href"],
+        ["xpath=//form/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Index')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "0f6cc139-7a1f-4b73-b2af-25e9f2fea593",
+    "name": "EdytujWydarzenie_Selenium",
+    "commands": [{
+      "id": "f2e79808-5c61-4e54-b1ff-41523ef74d4d",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/WebApplication1/faces/index.xhtml",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "05b17303-7112-42e8-8a25-03b09ff02c69",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "710x676",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "317cb0f2-bbff-4491-a7ff-15c99eb41f43",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Show All Wydarzenie Items",
+      "targets": [
+        ["linkText=Show All Wydarzenie Items", "linkText"],
+        ["css=a:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Show All Wydarzenie Items')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/WebApplication1/faces/web_jsf/wydarzenie/List.xhtml')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Show All Wydarzenie Items')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1cb10cfc-1f35-4bd2-8d95-e1830aea0359",
+      "comment": "",
+      "command": "click",
+      "target": "css=.jsfcrud_even_row a:nth-child(2)",
+      "targets": [
+        ["css=.jsfcrud_even_row a:nth-child(2)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Edit')])[2]", "xpath:link"],
+        ["xpath=//a[@onclick=\"mojarra.jsfcljs(document.getElementById('j_idt11'),{'j_idt11:wydarzenia:1:j_idt52':'j_idt11:wydarzenia:1:j_idt52'},'');return false\"]", "xpath:attributes"],
+        ["xpath=//table[@id='j_idt11:wydarzenia']/tbody/tr[2]/td[10]/a[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//tr[2]/td[10]/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "df249f91-fae1-46be-a51d-4b6fd1eb10cb",
+      "comment": "",
+      "command": "click",
+      "target": "id=j_idt12:nazwaWydarzenia",
+      "targets": [
+        ["id=j_idt12:nazwaWydarzenia", "id"],
+        ["name=j_idt12:nazwaWydarzenia", "name"],
+        ["css=#j_idt12\\3AnazwaWydarzenia", "css:finder"],
+        ["xpath=//input[@id='j_idt12:nazwaWydarzenia']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/table/tbody/tr[3]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d4cdffb1-f15d-4600-8c3a-86d8603365a4",
+      "comment": "",
+      "command": "click",
+      "target": "id=j_idt12:nazwaWydarzenia",
+      "targets": [
+        ["id=j_idt12:nazwaWydarzenia", "id"],
+        ["name=j_idt12:nazwaWydarzenia", "name"],
+        ["css=#j_idt12\\3AnazwaWydarzenia", "css:finder"],
+        ["xpath=//input[@id='j_idt12:nazwaWydarzenia']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/table/tbody/tr[3]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6bf1b245-b989-4c50-95c0-fe6d91b0c27a",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "id=j_idt12:nazwaWydarzenia",
+      "targets": [
+        ["id=j_idt12:nazwaWydarzenia", "id"],
+        ["name=j_idt12:nazwaWydarzenia", "name"],
+        ["css=#j_idt12\\3AnazwaWydarzenia", "css:finder"],
+        ["xpath=//input[@id='j_idt12:nazwaWydarzenia']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/table/tbody/tr[3]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "88b52d06-9d66-4c9f-973e-73c964c06614",
+      "comment": "",
+      "command": "type",
+      "target": "id=j_idt12:nazwaWydarzenia",
+      "targets": [
+        ["id=j_idt12:nazwaWydarzenia", "id"],
+        ["name=j_idt12:nazwaWydarzenia", "name"],
+        ["css=#j_idt12\\3AnazwaWydarzenia", "css:finder"],
+        ["xpath=//input[@id='j_idt12:nazwaWydarzenia']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/table/tbody/tr[3]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": "Pilka nozna"
+    }, {
+      "id": "c838bb32-f893-49d4-bdc0-9fae993458ae",
+      "comment": "",
+      "command": "click",
+      "target": "id=j_idt12:linkDoWydarzenia",
+      "targets": [
+        ["id=j_idt12:linkDoWydarzenia", "id"],
+        ["name=j_idt12:linkDoWydarzenia", "name"],
+        ["css=#j_idt12\\3AlinkDoWydarzenia", "css:finder"],
+        ["xpath=//input[@id='j_idt12:linkDoWydarzenia']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/table/tbody/tr[7]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[7]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c7eac4cd-6ba2-4196-96bd-84079d9368e0",
+      "comment": "",
+      "command": "click",
+      "target": "id=j_idt12:linkDoWydarzenia",
+      "targets": [
+        ["id=j_idt12:linkDoWydarzenia", "id"],
+        ["name=j_idt12:linkDoWydarzenia", "name"],
+        ["css=#j_idt12\\3AlinkDoWydarzenia", "css:finder"],
+        ["xpath=//input[@id='j_idt12:linkDoWydarzenia']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/table/tbody/tr[7]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[7]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1e129bf6-0355-4508-94dc-6e50a06b9634",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "id=j_idt12:linkDoWydarzenia",
+      "targets": [
+        ["id=j_idt12:linkDoWydarzenia", "id"],
+        ["name=j_idt12:linkDoWydarzenia", "name"],
+        ["css=#j_idt12\\3AlinkDoWydarzenia", "css:finder"],
+        ["xpath=//input[@id='j_idt12:linkDoWydarzenia']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/table/tbody/tr[7]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[7]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c2c2729f-cd75-4e9e-9300-e0ff89aad55e",
+      "comment": "",
+      "command": "type",
+      "target": "id=j_idt12:linkDoWydarzenia",
+      "targets": [
+        ["id=j_idt12:linkDoWydarzenia", "id"],
+        ["name=j_idt12:linkDoWydarzenia", "name"],
+        ["css=#j_idt12\\3AlinkDoWydarzenia", "css:finder"],
+        ["xpath=//input[@id='j_idt12:linkDoWydarzenia']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/table/tbody/tr[7]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[7]/td[2]/input", "xpath:position"]
+      ],
+      "value": "pilka.pl"
+    }, {
+      "id": "b09eb2b7-0b7f-40e1-9b52-c6575ccadf29",
+      "comment": "",
+      "command": "click",
+      "target": "id=j_idt12:godzinaRozpoczecia",
+      "targets": [
+        ["id=j_idt12:godzinaRozpoczecia", "id"],
+        ["name=j_idt12:godzinaRozpoczecia", "name"],
+        ["css=#j_idt12\\3AgodzinaRozpoczecia", "css:finder"],
+        ["xpath=//input[@id='j_idt12:godzinaRozpoczecia']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/table/tbody/tr[5]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f980cfdd-e953-48af-a0f4-96b5a83336ad",
+      "comment": "",
+      "command": "click",
+      "target": "id=j_idt12:godzinaRozpoczecia",
+      "targets": [
+        ["id=j_idt12:godzinaRozpoczecia", "id"],
+        ["name=j_idt12:godzinaRozpoczecia", "name"],
+        ["css=#j_idt12\\3AgodzinaRozpoczecia", "css:finder"],
+        ["xpath=//input[@id='j_idt12:godzinaRozpoczecia']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/table/tbody/tr[5]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "00c0c930-b5fb-4750-a4e2-4c4f20de2fe3",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "id=j_idt12:godzinaRozpoczecia",
+      "targets": [
+        ["id=j_idt12:godzinaRozpoczecia", "id"],
+        ["name=j_idt12:godzinaRozpoczecia", "name"],
+        ["css=#j_idt12\\3AgodzinaRozpoczecia", "css:finder"],
+        ["xpath=//input[@id='j_idt12:godzinaRozpoczecia']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/table/tbody/tr[5]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "133b7e41-dc31-4f78-9421-253285ffde2e",
+      "comment": "",
+      "command": "type",
+      "target": "id=j_idt12:godzinaRozpoczecia",
+      "targets": [
+        ["id=j_idt12:godzinaRozpoczecia", "id"],
+        ["name=j_idt12:godzinaRozpoczecia", "name"],
+        ["css=#j_idt12\\3AgodzinaRozpoczecia", "css:finder"],
+        ["xpath=//input[@id='j_idt12:godzinaRozpoczecia']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/table/tbody/tr[5]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[2]/input", "xpath:position"]
+      ],
+      "value": "18:45"
+    }, {
+      "id": "1dec1472-1e75-4365-b47a-5862f7fcf3ff",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Save",
+      "targets": [
+        ["linkText=Save", "linkText"],
+        ["css=a:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Save')]", "xpath:link"],
+        ["xpath=//a[@onclick=\"mojarra.jsfcljs(document.getElementById('j_idt12'),{'j_idt12:j_idt23':'j_idt12:j_idt23'},'');return false\"]", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Save')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9d2a5429-3697-461c-88ec-0e6344bd7fb8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Index",
+      "targets": [
+        ["linkText=Index", "linkText"],
+        ["css=a:nth-child(15)", "css:finder"],
+        ["xpath=//a[contains(text(),'Index')]", "xpath:link"],
+        ["xpath=//form[@id='j_idt12']/a[5]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/WebApplication1/faces/index.xhtml')]", "xpath:href"],
+        ["xpath=//a[5]", "xpath:position"],
+        ["xpath=//a[contains(.,'Index')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "c7d4429b-c3af-49b9-be6f-de1383643e1e",
+    "name": "WyswietlWydarzenie_Selenium",
+    "commands": [{
+      "id": "3e5c11cc-a880-4fac-b096-9dbb8771c1bc",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/WebApplication1/faces/index.xhtml",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7dec20f6-dc16-444a-a385-eef1bf5511e5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1026x652",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0bc432e9-5816-465e-9699-46fa57ad0347",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Show All Wydarzenie Items",
+      "targets": [
+        ["linkText=Show All Wydarzenie Items", "linkText"],
+        ["css=a:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Show All Wydarzenie Items')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/WebApplication1/faces/web_jsf/wydarzenie/List.xhtml')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Show All Wydarzenie Items')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c5017e9-0a5b-4f6c-a79f-e65a23c9c1fc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.jsfcrud_even_row a:nth-child(1)",
+      "targets": [
+        ["css=.jsfcrud_even_row a:nth-child(1)", "css:finder"],
+        ["xpath=(//a[contains(text(),'View')])[2]", "xpath:link"],
+        ["xpath=//a[@onclick=\"mojarra.jsfcljs(document.getElementById('j_idt11'),{'j_idt11:wydarzenia:1:j_idt50':'j_idt11:wydarzenia:1:j_idt50'},'');return false\"]", "xpath:attributes"],
+        ["xpath=//table[@id='j_idt11:wydarzenia']/tbody/tr[2]/td[10]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[4]", "xpath:href"],
+        ["xpath=//tr[2]/td[10]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "006e57f6-896e-416d-af5a-6ed5f6706d0e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Show All Wydarzenie Items",
+      "targets": [
+        ["linkText=Show All Wydarzenie Items", "linkText"],
+        ["css=a:nth-child(12)", "css:finder"],
+        ["xpath=//a[contains(text(),'Show All Wydarzenie Items')]", "xpath:link"],
+        ["xpath=//a[@onclick=\"mojarra.jsfcljs(document.getElementById('j_idt12'),{'j_idt12:j_idt38':'j_idt12:j_idt38'},'');return false\"]", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/a[4]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[3]", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'Show All Wydarzenie Items')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2798bfb1-a734-4a18-aa9b-5b56d6a2524e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Index",
+      "targets": [
+        ["linkText=Index", "linkText"],
+        ["css=a:nth-child(8)", "css:finder"],
+        ["xpath=//a[contains(text(),'Index')]", "xpath:link"],
+        ["xpath=//form[@id='j_idt11']/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/WebApplication1/faces/index.xhtml')]", "xpath:href"],
+        ["xpath=//form/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Index')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "c6b4d636-d3ed-4c6f-8f5d-bf1298657839",
+    "name": "WyswietlWydarzenia_Selenium",
+    "commands": [{
+      "id": "02527b50-4031-4427-b88c-926ae864f100",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/WebApplication1/faces/index.xhtml",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0f7f1f6d-e325-40b8-8310-6cd965cd3b87",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1026x652",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d81ed395-0720-4fa1-8f43-4a7b41549276",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Show All Wydarzenie Items",
+      "targets": [
+        ["linkText=Show All Wydarzenie Items", "linkText"],
+        ["css=a:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Show All Wydarzenie Items')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/WebApplication1/faces/web_jsf/wydarzenie/List.xhtml')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Show All Wydarzenie Items')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "57a48ab9-bdf8-4c3a-b23b-25238563c79b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Index",
+      "targets": [
+        ["linkText=Index", "linkText"],
+        ["css=a:nth-child(8)", "css:finder"],
+        ["xpath=//a[contains(text(),'Index')]", "xpath:link"],
+        ["xpath=//form[@id='j_idt11']/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/WebApplication1/faces/index.xhtml')]", "xpath:href"],
+        ["xpath=//form/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Index')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "0760326d-68ac-40b8-aa13-67260c1b2c99",
+    "name": "[reczne]DodajWydarzenie_Selenium",
+    "commands": [{
+      "id": "d384ac50-23f4-4b54-8015-239344403d42",
+      "comment": "",
+      "command": "open",
+      "target": "/WebApplication1/faces/index.xhtml",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dabda016-b330-4e59-b38e-f3cc22272a59",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "800x900",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7f279fde-9de2-4a6e-a4fd-c779e45c3eef",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Show All Wydarzenie Items",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eb2f2a11-16d5-4a16-a754-42ebdac79845",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Create New Wydarzenie",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4d54d6f7-a864-4185-8552-66eabb5fbd3a",
+      "comment": "",
+      "command": "click",
+      "target": "id=j_idt12:wydarzenieId",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5fd9ea36-20cf-4673-a194-6284a731a7b0",
+      "comment": "",
+      "command": "type",
+      "target": "id=j_idt12:wydarzenieId",
+      "targets": [],
+      "value": "3"
+    }, {
+      "id": "d7a7e16a-a979-4ddb-a545-d8d97f02e387",
+      "comment": "",
+      "command": "click",
+      "target": "id=j_idt12:liczbaMiejsc",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5de09ffb-6f46-4ff7-bbf6-aea90f457d3f",
+      "comment": "",
+      "command": "type",
+      "target": "id=j_idt12:liczbaMiejsc",
+      "targets": [],
+      "value": "129"
+    }, {
+      "id": "482d8319-6523-4808-aee4-26d603f7017c",
+      "comment": "",
+      "command": "click",
+      "target": "id=j_idt12:nazwaWydarzenia",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4da6dfa0-3b2d-49e0-9736-0f1a5edd4ee1",
+      "comment": "",
+      "command": "type",
+      "target": "id=j_idt12:nazwaWydarzenia",
+      "targets": [],
+      "value": "turniej szachowy"
+    }, {
+      "id": "4d060b42-04ce-4337-a4b6-b4c67d43aa49",
+      "comment": "",
+      "command": "click",
+      "target": "id=j_idt12:dataWydarzenia",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d1ef9035-4cc6-418c-b4ab-9480afe7b6ce",
+      "comment": "",
+      "command": "type",
+      "target": "id=j_idt12:dataWydarzenia",
+      "targets": [],
+      "value": "25.02.2021"
+    }, {
+      "id": "9bdc1700-1160-492b-842e-c2523b9d57ad",
+      "comment": "",
+      "command": "click",
+      "target": "id=j_idt12:godzinaRozpoczecia",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "351a09e3-928c-4037-a65d-8acc22084fe3",
+      "comment": "",
+      "command": "type",
+      "target": "id=j_idt12:godzinaRozpoczecia",
+      "targets": [],
+      "value": "17:30"
+    }, {
+      "id": "c1de0d80-df02-41a9-a0a7-94043cf5642e",
+      "comment": "",
+      "command": "click",
+      "target": "id=j_idt12:typWydarzenia",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ca79af3d-a5b7-4198-ad29-12d4e5918806",
+      "comment": "",
+      "command": "type",
+      "target": "id=j_idt12:typWydarzenia",
+      "targets": [],
+      "value": "Stacjonarne"
+    }, {
+      "id": "b648e455-644d-4e56-940e-e814a438a6a7",
+      "comment": "",
+      "command": "click",
+      "target": "id=j_idt12:linkDoWydarzenia",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9ce2093d-cdab-4c90-b828-d9a2273ce1cb",
+      "comment": "",
+      "command": "type",
+      "target": "id=j_idt12:linkDoWydarzenia",
+      "targets": [],
+      "value": "szachy_turniej.pl"
+    }, {
+      "id": "06f379ea-2c21-4435-b607-fb3477f11459",
+      "comment": "",
+      "command": "click",
+      "target": "id=j_idt12:miejsceWydarzenia",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "edaa6be9-4752-4300-a9cb-1280db4da610",
+      "comment": "",
+      "command": "type",
+      "target": "id=j_idt12:miejsceWydarzenia",
+      "targets": [],
+      "value": "Warszawa"
+    }, {
+      "id": "e99d64f9-14d2-495c-a739-a71919ee5d2c",
+      "comment": "",
+      "command": "click",
+      "target": "id=j_idt12:czasTrwania",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a12d5e97-51d5-45ee-a9b7-3a6fb2ad71ba",
+      "comment": "",
+      "command": "type",
+      "target": "id=j_idt12:czasTrwania",
+      "targets": [],
+      "value": "180"
+    }, {
+      "id": "4924f56c-26e0-4596-a878-bd615c76bd7e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Save",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3ca5ba89-897c-4be5-a5a3-1072244e3dd4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Show All Wydarzenie Items",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bdd39ac5-5f12-4c00-9493-5bce44519fce",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Index",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "60a1c168-2ef5-47d0-8a8f-1aa8daf18fc0",
+    "name": "[reczne]UsunWydarzenie_Selenium",
+    "commands": [{
+      "id": "67eb07ea-dbb4-4a45-a8cf-3d0dd118ccdd",
+      "comment": "",
+      "command": "open",
+      "target": "/WebApplication1/faces/index.xhtml",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5b17c0ff-791d-492c-8b43-8d42c4956de6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "800x900",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "80a51e7f-e84c-4576-838a-42c9c89f3251",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Show All Wydarzenie Items",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "70aad1e1-dff8-4eef-b7fe-5e913e1a126f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Destroy",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d8637dc1-f58a-40aa-8b8c-d5f9de5f42c5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Index",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "d5797269-8651-4aa0-9734-a45ea22181d9",
+    "name": "TS_1",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c1e1f339-8e0f-4bc2-b583-2c96afdf1e54", "0760326d-68ac-40b8-aa13-67260c1b2c99", "0f6cc139-7a1f-4b73-b2af-25e9f2fea593", "c6b4d636-d3ed-4c6f-8f5d-bf1298657839", "60a1c168-2ef5-47d0-8a8f-1aa8daf18fc0"]
+  }],
+  "urls": ["http://localhost:8080/", "http://localhost:8080/WebApplication1/faces/index.xhtml"],
+  "plugins": []
+}
