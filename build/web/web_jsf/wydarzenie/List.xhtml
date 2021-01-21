@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="#{bundle.ListWydarzenieTitle}"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:form styleClass="jsfcrud_list_form">
+                <h:panelGroup id="messagePanel" layout="block">
+                    <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+                </h:panelGroup>
+                <h:outputText escape="false" value="#{bundle.ListWydarzenieEmpty}" rendered="#{wydarzenieController.items.rowCount == 0}"/>
+                <h:panelGroup rendered="#{wydarzenieController.items.rowCount > 0}">
+                    <h:outputText value="#{wydarzenieController.pagination.pageFirstItem + 1}..#{wydarzenieController.pagination.pageLastItem + 1}/#{wydarzenieController.pagination.itemsCount}"/>&nbsp;
+                    <h:commandLink action="#{wydarzenieController.previous}" value="#{bundle.Previous} #{wydarzenieController.pagination.pageSize}" rendered="#{wydarzenieController.pagination.hasPreviousPage}"/>&nbsp;
+                    <h:commandLink action="#{wydarzenieController.next}" value="#{bundle.Next} #{wydarzenieController.pagination.pageSize}" rendered="#{wydarzenieController.pagination.hasNextPage}"/>&nbsp;
+                    <h:dataTable value="#{wydarzenieController.items}" var="item" border="0" cellpadding="2" id="wydarzenia" cellspacing="0" rowClasses="jsfcrud_odd_row,jsfcrud_even_row" rules="all" style="border:solid 1px">
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListWydarzenieTitle_wydarzenieId}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.wydarzenieId}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListWydarzenieTitle_liczbaMiejsc}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.liczbaMiejsc}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListWydarzenieTitle_nazwaWydarzenia}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.nazwaWydarzenia}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListWydarzenieTitle_dataWydarzenia}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.dataWydarzenia}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListWydarzenieTitle_godzinaRozpoczecia}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.godzinaRozpoczecia}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListWydarzenieTitle_typWydarzenia}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.typWydarzenia}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListWydarzenieTitle_linkDoWydarzenia}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.linkDoWydarzenia}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListWydarzenieTitle_miejsceWydarzenia}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.miejsceWydarzenia}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListWydarzenieTitle_czasTrwania}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.czasTrwania}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="&nbsp;"/>
+                            </f:facet>
+                            <h:commandLink action="#{wydarzenieController.prepareView}" value="#{bundle.ListWydarzenieViewLink}"/>
+                            <h:outputText value=" "/>
+                            <h:commandLink action="#{wydarzenieController.prepareEdit}" value="#{bundle.ListWydarzenieEditLink}"/>
+                            <h:outputText value=" "/>
+                            <h:commandLink action="#{wydarzenieController.destroy}" value="#{bundle.ListWydarzenieDestroyLink}"/>
+                        </h:column>
+                    </h:dataTable>
+                </h:panelGroup>
+                <br />
+                <h:commandLink action="#{wydarzenieController.prepareCreate}" value="#{bundle.ListWydarzenieCreateLink}"/>
+                <br />
+                <br />
+                <h:link outcome="/index" value="#{bundle.ListWydarzenieIndexLink}"/>
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

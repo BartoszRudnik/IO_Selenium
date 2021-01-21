@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="#{bundle.ViewWydarzenieTitle}"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2" id="wydarzenie">
+                    <h:outputText value="#{bundle.ViewWydarzenieLabel_wydarzenieId}"/>
+                    <h:outputText value="#{wydarzenieController.selected.wydarzenieId}" title="#{bundle.ViewWydarzenieTitle_wydarzenieId}"/>
+                    <h:outputText value="#{bundle.ViewWydarzenieLabel_liczbaMiejsc}"/>
+                    <h:outputText value="#{wydarzenieController.selected.liczbaMiejsc}" title="#{bundle.ViewWydarzenieTitle_liczbaMiejsc}"/>
+                    <h:outputText value="#{bundle.ViewWydarzenieLabel_nazwaWydarzenia}"/>
+                    <h:outputText value="#{wydarzenieController.selected.nazwaWydarzenia}" title="#{bundle.ViewWydarzenieTitle_nazwaWydarzenia}"/>
+                    <h:outputText value="#{bundle.ViewWydarzenieLabel_dataWydarzenia}"/>
+                    <h:outputText value="#{wydarzenieController.selected.dataWydarzenia}" title="#{bundle.ViewWydarzenieTitle_dataWydarzenia}"/>
+                    <h:outputText value="#{bundle.ViewWydarzenieLabel_godzinaRozpoczecia}"/>
+                    <h:outputText value="#{wydarzenieController.selected.godzinaRozpoczecia}" title="#{bundle.ViewWydarzenieTitle_godzinaRozpoczecia}"/>
+                    <h:outputText value="#{bundle.ViewWydarzenieLabel_typWydarzenia}"/>
+                    <h:outputText value="#{wydarzenieController.selected.typWydarzenia}" title="#{bundle.ViewWydarzenieTitle_typWydarzenia}"/>
+                    <h:outputText value="#{bundle.ViewWydarzenieLabel_linkDoWydarzenia}"/>
+                    <h:outputText value="#{wydarzenieController.selected.linkDoWydarzenia}" title="#{bundle.ViewWydarzenieTitle_linkDoWydarzenia}"/>
+                    <h:outputText value="#{bundle.ViewWydarzenieLabel_miejsceWydarzenia}"/>
+                    <h:outputText value="#{wydarzenieController.selected.miejsceWydarzenia}" title="#{bundle.ViewWydarzenieTitle_miejsceWydarzenia}"/>
+                    <h:outputText value="#{bundle.ViewWydarzenieLabel_czasTrwania}"/>
+                    <h:outputText value="#{wydarzenieController.selected.czasTrwania}" title="#{bundle.ViewWydarzenieTitle_czasTrwania}"/>
+                </h:panelGrid>
+                <br />
+                <h:commandLink action="#{wydarzenieController.destroyAndView}" value="#{bundle.ViewWydarzenieDestroyLink}"/>
+                <br />
+                <br />
+                <h:link outcome="Edit" value="#{bundle.ViewWydarzenieEditLink}"/>
+                <br />
+                <h:commandLink action="#{wydarzenieController.prepareCreate}" value="#{bundle.ViewWydarzenieCreateLink}" />
+                <br />
+                <h:commandLink action="#{wydarzenieController.prepareList}" value="#{bundle.ViewWydarzenieShowAllLink}"/>
+                <br />
+                <br />
+                <h:link outcome="/index" value="#{bundle.ViewWydarzenieIndexLink}"/>
+
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

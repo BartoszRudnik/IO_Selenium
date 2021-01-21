@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="#{bundle.EditWydarzenieTitle}"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                    <h:outputLabel value="#{bundle.EditWydarzenieLabel_wydarzenieId}" for="wydarzenieId" />
+                    <h:inputText id="wydarzenieId" value="#{wydarzenieController.selected.wydarzenieId}" title="#{bundle.EditWydarzenieTitle_wydarzenieId}" required="true" requiredMessage="#{bundle.EditWydarzenieRequiredMessage_wydarzenieId}"/>
+                    <h:outputLabel value="#{bundle.EditWydarzenieLabel_liczbaMiejsc}" for="liczbaMiejsc" />
+                    <h:inputText id="liczbaMiejsc" value="#{wydarzenieController.selected.liczbaMiejsc}" title="#{bundle.EditWydarzenieTitle_liczbaMiejsc}" required="true" requiredMessage="#{bundle.EditWydarzenieRequiredMessage_liczbaMiejsc}"/>
+                    <h:outputLabel value="#{bundle.EditWydarzenieLabel_nazwaWydarzenia}" for="nazwaWydarzenia" />
+                    <h:inputText id="nazwaWydarzenia" value="#{wydarzenieController.selected.nazwaWydarzenia}" title="#{bundle.EditWydarzenieTitle_nazwaWydarzenia}" required="true" requiredMessage="#{bundle.EditWydarzenieRequiredMessage_nazwaWydarzenia}"/>
+                    <h:outputLabel value="#{bundle.EditWydarzenieLabel_dataWydarzenia}" for="dataWydarzenia" />
+                    <h:inputText id="dataWydarzenia" value="#{wydarzenieController.selected.dataWydarzenia}" title="#{bundle.EditWydarzenieTitle_dataWydarzenia}" required="true" requiredMessage="#{bundle.EditWydarzenieRequiredMessage_dataWydarzenia}"/>
+                    <h:outputLabel value="#{bundle.EditWydarzenieLabel_godzinaRozpoczecia}" for="godzinaRozpoczecia" />
+                    <h:inputText id="godzinaRozpoczecia" value="#{wydarzenieController.selected.godzinaRozpoczecia}" title="#{bundle.EditWydarzenieTitle_godzinaRozpoczecia}" required="true" requiredMessage="#{bundle.EditWydarzenieRequiredMessage_godzinaRozpoczecia}"/>
+                    <h:outputLabel value="#{bundle.EditWydarzenieLabel_typWydarzenia}" for="typWydarzenia" />
+                    <h:inputText id="typWydarzenia" value="#{wydarzenieController.selected.typWydarzenia}" title="#{bundle.EditWydarzenieTitle_typWydarzenia}" required="true" requiredMessage="#{bundle.EditWydarzenieRequiredMessage_typWydarzenia}"/>
+                    <h:outputLabel value="#{bundle.EditWydarzenieLabel_linkDoWydarzenia}" for="linkDoWydarzenia" />
+                    <h:inputText id="linkDoWydarzenia" value="#{wydarzenieController.selected.linkDoWydarzenia}" title="#{bundle.EditWydarzenieTitle_linkDoWydarzenia}" required="true" requiredMessage="#{bundle.EditWydarzenieRequiredMessage_linkDoWydarzenia}"/>
+                    <h:outputLabel value="#{bundle.EditWydarzenieLabel_miejsceWydarzenia}" for="miejsceWydarzenia" />
+                    <h:inputText id="miejsceWydarzenia" value="#{wydarzenieController.selected.miejsceWydarzenia}" title="#{bundle.EditWydarzenieTitle_miejsceWydarzenia}" required="true" requiredMessage="#{bundle.EditWydarzenieRequiredMessage_miejsceWydarzenia}"/>
+                    <h:outputLabel value="#{bundle.EditWydarzenieLabel_czasTrwania}" for="czasTrwania" />
+                    <h:inputText id="czasTrwania" value="#{wydarzenieController.selected.czasTrwania}" title="#{bundle.EditWydarzenieTitle_czasTrwania}" />
+                </h:panelGrid>
+                <h:commandLink action="#{wydarzenieController.update}" value="#{bundle.EditWydarzenieSaveLink}"/>
+                <br />
+                <br />
+                <h:link outcome="View" value="#{bundle.EditWydarzenieViewLink}"/>
+                <br />
+                <h:commandLink action="#{wydarzenieController.prepareList}" value="#{bundle.EditWydarzenieShowAllLink}" immediate="true"/>
+                <br />
+                <br />
+                <h:link outcome="/index" value="#{bundle.EditWydarzenieIndexLink}" />
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>
