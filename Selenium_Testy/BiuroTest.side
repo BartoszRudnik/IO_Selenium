@@ -17,7 +17,7 @@
       "id": "bdfbc3ce-35d0-4e79-9d8a-ad11c5ec07f7",
       "comment": "",
       "command": "setWindowSize",
-      "target": "550x692",
+      "target": "850x892",
       "targets": [],
       "value": ""
     }, {
@@ -389,7 +389,7 @@
       "id": "3658f550-68ff-4205-ae5d-2b1d1b8f6022",
       "comment": "",
       "command": "setWindowSize",
-      "target": "710x676",
+      "target": "810x876",
       "targets": [],
       "value": ""
     }, {
@@ -450,7 +450,7 @@
       "id": "05b17303-7112-42e8-8a25-03b09ff02c69",
       "comment": "",
       "command": "setWindowSize",
-      "target": "710x676",
+      "target": "810x876",
       "targets": [],
       "value": ""
     }, {
@@ -1021,6 +1021,163 @@
       "command": "click",
       "target": "linkText=Index",
       "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "9f972140-94ca-4155-830e-d45377740d09",
+    "name": "dodajRezerwacje_Selenium",
+    "commands": [{
+      "id": "6481919f-43cb-4faf-8a58-5cee298a2e88",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/WebApplication1/faces/index.xhtml",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b5773778-548b-459d-822d-2f708bceb42a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "994x780",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "38573c53-deca-4a31-85e1-2df145d04b3b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Show All Rezerwacja Items",
+      "targets": [
+        ["linkText=Show All Rezerwacja Items", "linkText"],
+        ["css=a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Show All Rezerwacja Items')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/WebApplication1/faces/web_jsf/rezerwacja/List.xhtml')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Show All Rezerwacja Items')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "239d1231-13ba-49d3-814b-8802273c8e49",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Create New Rezerwacja",
+      "targets": [
+        ["linkText=Create New Rezerwacja", "linkText"],
+        ["css=a:nth-child(5)", "css:finder"],
+        ["xpath=//a[contains(text(),'Create New Rezerwacja')]", "xpath:link"],
+        ["xpath=//a[@onclick=\"mojarra.jsfcljs(document.getElementById('j_idt11'),{'j_idt11:j_idt36':'j_idt11:j_idt36'},'');return false\"]", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt11']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[7]", "xpath:href"],
+        ["xpath=//form/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Create New Rezerwacja')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5c198369-3b87-4a7f-ad07-76230bbd8198",
+      "comment": "",
+      "command": "click",
+      "target": "id=j_idt12:rezerwacjaId",
+      "targets": [
+        ["id=j_idt12:rezerwacjaId", "id"],
+        ["name=j_idt12:rezerwacjaId", "name"],
+        ["css=#j_idt12\\3ArezerwacjaId", "css:finder"],
+        ["xpath=//input[@id='j_idt12:rezerwacjaId']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/table/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3f23d530-4edc-4680-80fd-b51798bc78a3",
+      "comment": "",
+      "command": "type",
+      "target": "id=j_idt12:rezerwacjaId",
+      "targets": [
+        ["id=j_idt12:rezerwacjaId", "id"],
+        ["name=j_idt12:rezerwacjaId", "name"],
+        ["css=#j_idt12\\3ArezerwacjaId", "css:finder"],
+        ["xpath=//input[@id='j_idt12:rezerwacjaId']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/table/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "3"
+    }, {
+      "id": "a140c166-b946-4998-8e4e-c24e03cc099f",
+      "comment": "",
+      "command": "click",
+      "target": "id=j_idt12:idWydarzenie",
+      "targets": [
+        ["id=j_idt12:idWydarzenie", "id"],
+        ["name=j_idt12:idWydarzenie", "name"],
+        ["css=#j_idt12\\3AidWydarzenie", "css:finder"],
+        ["xpath=//select[@id='j_idt12:idWydarzenie']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/table/tbody/tr[2]/td[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e6f5515a-ce9d-44e1-a075-7e80b9994fe9",
+      "comment": "",
+      "command": "select",
+      "target": "id=j_idt12:idWydarzenie",
+      "targets": [],
+      "value": "label=entities.Wydarzenie[ wydarzenieId=13 ]"
+    }, {
+      "id": "badb7491-b6db-4246-9351-da17eea7d32e",
+      "comment": "",
+      "command": "click",
+      "target": "css=option:nth-child(5)",
+      "targets": [
+        ["css=option:nth-child(5)", "css:finder"],
+        ["xpath=//option[@value='13']", "xpath:attributes"],
+        ["xpath=//select[@id='j_idt12:idWydarzenie']/option[5]", "xpath:idRelative"],
+        ["xpath=//option[5]", "xpath:position"],
+        ["xpath=//option[contains(.,'entities.Wydarzenie[ wydarzenieId=13 ]')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "64d5182b-5e32-4b80-8367-0d3a06ed40aa",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Save",
+      "targets": [
+        ["linkText=Save", "linkText"],
+        ["css=a:nth-child(5)", "css:finder"],
+        ["xpath=//a[contains(text(),'Save')]", "xpath:link"],
+        ["xpath=//a[@onclick=\"mojarra.jsfcljs(document.getElementById('j_idt12'),{'j_idt12:j_idt18':'j_idt12:j_idt18'},'');return false\"]", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Save')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5395407b-d5ba-4b93-97ae-078d54468f19",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Show All Rezerwacja Items",
+      "targets": [
+        ["linkText=Show All Rezerwacja Items", "linkText"],
+        ["css=a:nth-child(8)", "css:finder"],
+        ["xpath=//a[contains(text(),'Show All Rezerwacja Items')]", "xpath:link"],
+        ["xpath=//a[@onclick=\"mojarra.jsfcljs(document.getElementById('j_idt12'),{'j_idt12:j_idt20':'j_idt12:j_idt20'},'');return false\"]", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/a[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Show All Rezerwacja Items')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c53a9f5-f3a9-427b-9805-227258f22d43",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Index",
+      "targets": [
+        ["linkText=Index", "linkText"],
+        ["css=a:nth-child(8)", "css:finder"],
+        ["xpath=//a[contains(text(),'Index')]", "xpath:link"],
+        ["xpath=//form[@id='j_idt11']/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/WebApplication1/faces/index.xhtml')]", "xpath:href"],
+        ["xpath=//form/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Index')]", "xpath:innerText"]
+      ],
       "value": ""
     }]
   }],
