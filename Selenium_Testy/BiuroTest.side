@@ -727,35 +727,18 @@
       ],
       "value": ""
     }, {
-      "id": "006e57f6-896e-416d-af5a-6ed5f6706d0e",
+      "id": "778b0a53-f7d0-447f-a113-e81aff96a40c",
       "comment": "",
       "command": "click",
       "target": "linkText=Show All Wydarzenie Items",
-      "targets": [
-        ["linkText=Show All Wydarzenie Items", "linkText"],
-        ["css=a:nth-child(12)", "css:finder"],
-        ["xpath=//a[contains(text(),'Show All Wydarzenie Items')]", "xpath:link"],
-        ["xpath=//a[@onclick=\"mojarra.jsfcljs(document.getElementById('j_idt12'),{'j_idt12:j_idt38':'j_idt12:j_idt38'},'');return false\"]", "xpath:attributes"],
-        ["xpath=//form[@id='j_idt12']/a[4]", "xpath:idRelative"],
-        ["xpath=(//a[contains(@href, '#')])[3]", "xpath:href"],
-        ["xpath=//a[4]", "xpath:position"],
-        ["xpath=//a[contains(.,'Show All Wydarzenie Items')]", "xpath:innerText"]
-      ],
+      "targets": [],
       "value": ""
     }, {
-      "id": "2798bfb1-a734-4a18-aa9b-5b56d6a2524e",
+      "id": "429bd474-23f0-492d-b34c-baf9b9abdd36",
       "comment": "",
       "command": "click",
       "target": "linkText=Index",
-      "targets": [
-        ["linkText=Index", "linkText"],
-        ["css=a:nth-child(8)", "css:finder"],
-        ["xpath=//a[contains(text(),'Index')]", "xpath:link"],
-        ["xpath=//form[@id='j_idt11']/a[2]", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, '/WebApplication1/faces/index.xhtml')]", "xpath:href"],
-        ["xpath=//form/a[2]", "xpath:position"],
-        ["xpath=//a[contains(.,'Index')]", "xpath:innerText"]
-      ],
+      "targets": [],
       "value": ""
     }]
   }, {
@@ -776,18 +759,11 @@
       "targets": [],
       "value": ""
     }, {
-      "id": "d81ed395-0720-4fa1-8f43-4a7b41549276",
+      "id": "ae783c8d-77ac-4edf-b917-2f901056d368",
       "comment": "",
       "command": "click",
       "target": "linkText=Show All Wydarzenie Items",
-      "targets": [
-        ["linkText=Show All Wydarzenie Items", "linkText"],
-        ["css=a:nth-child(4)", "css:finder"],
-        ["xpath=//a[contains(text(),'Show All Wydarzenie Items')]", "xpath:link"],
-        ["xpath=//a[contains(@href, '/WebApplication1/faces/web_jsf/wydarzenie/List.xhtml')]", "xpath:href"],
-        ["xpath=//a[2]", "xpath:position"],
-        ["xpath=//a[contains(.,'Show All Wydarzenie Items')]", "xpath:innerText"]
-      ],
+      "targets": [],
       "value": ""
     }, {
       "id": "57a48ab9-bdf8-4c3a-b23b-25238563c79b",
@@ -803,6 +779,13 @@
         ["xpath=//form/a[2]", "xpath:position"],
         ["xpath=//a[contains(.,'Index')]", "xpath:innerText"]
       ],
+      "value": ""
+    }, {
+      "id": "f80a212b-692b-43e1-8a0a-178695be0eb2",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
       "value": ""
     }]
   }, {
@@ -1179,6 +1162,59 @@
         ["xpath=//a[contains(.,'Index')]", "xpath:innerText"]
       ],
       "value": ""
+    }]
+  }, {
+    "id": "4eb6fd6a-dcfc-4d4b-86c9-eaee08b3e4bd",
+    "name": "WeryfikacjaUIStrony",
+    "commands": [{
+      "id": "560c7e00-c657-48a5-8106-2263490ae085",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/WebApplication1/faces/index.xhtml",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2ec476f8-f6a2-4bbe-bed3-3d19b5a708b5",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Facelet Title",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7cdb123a-cbe5-40c9-bfda-a5151cb3a0ee",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//a",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "95f6a4fa-7137-400f-8242-5bf77bfbec37",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=Show All Rezerwacja Items",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c3f4055a-60c1-4c5a-ad3a-6a243ecab03e",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=Show All Wydarzenie Items",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "080eb5a4-43ae-402c-bac2-fc6645fa0d48",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//body/a[1]",
+      "targets": [],
+      "value": "Show All Rezerwacja Items"
+    }, {
+      "id": "b23fa708-8189-4bb5-ae88-1a5b1fe520a9",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//body/a[2]",
+      "targets": [],
+      "value": "Show All Wydarzenie Items"
     }]
   }],
   "suites": [{
