@@ -995,14 +995,21 @@
       "id": "70aad1e1-dff8-4eef-b7fe-5e913e1a126f",
       "comment": "",
       "command": "click",
-      "target": "linkText=Destroy",
+      "target": "css=.jsfcrud_even_row a:nth-child(1)",
       "targets": [],
       "value": ""
     }, {
       "id": "d8637dc1-f58a-40aa-8b8c-d5f9de5f42c5",
       "comment": "",
       "command": "click",
-      "target": "linkText=Index",
+      "target": "linkText=Destroy",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b5196028-a86f-4ff6-9dc5-7770d0630b5f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Show All Wydarzenie Items",
       "targets": [],
       "value": ""
     }]
